@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oásis - Devolução</title>
+    <link rel="icon" href="livros - icon.png">
+    <link rel="stylesheet" href="devolucao.css">
+
+</head>
+<body>
+    <center>
+        <form action="devolução.php" method="post">
+            <h1>Devolução</h1>
+            <hr><br>
+            <label for="identificacao">Identificação:</label>
+            <input type="number" name="identificacao" placeholder="Insira seu ID" required>
+            <br>
+
+            <label for="isbn">ISBN do livro:</label>
+            <input type="number" name="isbn" placeholder="xxxxxx" required>
+            <br>
+
+            <hr><br>
+            <button type="submit">Realizar devolução</button>
+        </form>
+        
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </center>
+</body>
+</html>

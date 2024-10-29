@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oásis - Cadastro de Usuários</title>
+    <link rel="icon" href="livros - icon.png">
+    <link rel="stylesheet" href="cadastrousuario.css">
+</head>
+<body>
+    <center>
+        <h1>Cadastro de Usuários</h1>
+        <hr>
+    </center>
+    <form action="cadastrousuario.php" method="POST">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="number" id="cpf" name="cpf" placeholder="Digite seu CPF sem pontos ou traços" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="number" name="telefone" placeholder="00-00000-0000" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" required>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" name="datanascimento" required>
+
+        <label for="cargo">Cargo:</label>
+        <select id="cargo" name="cargo" required>
+            <option value="" disabled selected>Selecione o cargo</option>
+            <option value="organizador">Organizador</option>
+            <option value="atendente">Atendente</option>
+            <option value="auxiliar_administrativo">Auxiliar Administrativo</option>
+            <option value="recepcionista">Recepcionista</option>
+            <option value="secretaria">Secretária</option>
+        </select>
+        
+        <hr>
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

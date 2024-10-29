@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oásis Home</title>
+    <link rel="icon" href="livros - icon.png">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <center>
+        <h1>Biblioteca Oásis Home 🏠︎</h1>
+        <hr>
+    </center>
+
+    <form action="home.php" method="post">
+        <h3>▼ Login/Cadastro para Usuários:</h3>
+        <button type="button"><a href="cadastrousuario.html">Fazer Cadastro</a></button>
+        <button type="button"><a href="login.html">Fazer Login</a></button>
+        <br><br>
+
+        <h3>▼ Empréstimos e Devoluções:</h3>
+        <button type="button"><a href="emprestimo.html">Fazer Empréstimo</a></button>
+        <button type="button"><a href="devolução.html">Fazer Devolução</a></button>
+        <br><br>
+
+        <h3>▼ Registrar Livro:</h3>
+        <button type="button"><a href="registrarlivro.html">Registrar</a></button>
+        <br><br>
+
+        <h3>▼ Fazer Cadastro de Cliente:</h3>
+        <button type="button"><a href="cadastrocliente.html">Cadastro Cliente</a></button>
+
+        <h3>▼ Fazer Consulta:</h3>
+        <button type="button"><a href="consulta.php">Consultar</a></button>
+    </form>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <footer>
+        Copyright 2024 ©️ - Biblioteca Oásis
+    </footer>
+</body>
+
+</html>
